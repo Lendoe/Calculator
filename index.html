@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		
+	</title>
+<style type="text/css">
+	
+	#famphoto{
+		position: absolute;
+		margin-top:265px;
+		text-align: center;
+		margin-left:5px;
+
+}
+
+	.sweets{
+		background-color: pink;
+		margin:10px;
+		height:50px;
+		width:175px;
+		font-size: 30px;
+			}
+
+	.box{
+		/*container*/ 
+		/*entire calculator*/
+	
+		border:6px solid black;
+		background-color:black;
+		border-radius: 05%;
+		margin-left: 1325px;
+		margin-top: 405px;
+		height:400px;
+		width:200px;
+}
+	#middle {
+			font-size: 22px;
+			font-weight:700;
+	}
+	
+
+	.ana{
+		/*keyboard*/
+		background-color:yellow;
+		height:30px;
+		width:40px;
+		margin:2px;
+		font-size: 20px;
+	}
+	#reggie{
+		/*avg and reset button*/
+		background-color: red;
+		width:80px;
+		height:30px;
+		margin:9px;
+	}
+	
+
+	.container{
+
+	position: absolute;
+	margin-bottom: 200px;
+	
+
+	}
+     body{
+     	background-image: url(https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/SsLYSh45lizrfzvep/videoblocks-man-hand-writing-in-daily-notebook-on-wooden-table-background-with-office-details-creative-background-top-view-chroma-key_hbwxyzytr0l_thumbnail-full01.png);
+     	background:cover;
+     	background-size:contain no-repeat;
+
+     }
+
+</style>
+</head>
+<script type="text/javascript">
+	
+	function average(input){
+		
+		let reset = input.split("+");
+		return eval(input)/reset.length;
+	}
+
+</script>
+<body>
+
+<center>
+
+
+
+<div class="container">
+<FORM class="box" NAME="Calc">
+<!-- family photo @ bottom of calc -->
+<div id="famphoto">
+	<img src="famphoto.jpg" width="190">
+
+</div>
+
+
+
+<!-- display -->
+<!-- <div class="screen"> -->
+<INPUT class="sweets" TYPE="text"   NAME="Input" Size="16">
+
+<br>
+
+<INPUT class="ana" TYPE="button" NAME="seven"   VALUE="7 " OnClick="Calc.Input.value += '7'"> 
+
+	
+
+<INPUT class="ana" TYPE="button" NAME="eight"   VALUE="  8  " OnCLick="Calc.Input.value += '8'">
+</INPUT>
+
+<INPUT class="ana" TYPE="button" NAME="nine"   VALUE="  9  " OnCLick="Calc.Input.value += '9'">
+
+<INPUT class="ana" TYPE="button" NAME="multiply"  VALUE="  *  " OnClick="Calc.Input.value += ' * '">
+
+
+<br>
+<INPUT class="ana" TYPE="button" NAME="four"   VALUE="  4  " OnCLick="Calc.Input.value += '4'">
+
+<INPUT class="ana" TYPE="button" NAME="five"   VALUE="  5 " OnCLick="Calc.Input.value += '5'">
+
+<INPUT class="ana" TYPE="button" NAME="six"   VALUE="6 " OnCLick="Calc.Input.value += '6'">
+
+<INPUT  class="ana" TYPE="button" NAME="divide"   VALUE=" /  " OnCLick="Calc.Input.value += '/'">
+
+<br>
+<INPUT class="ana" TYPE="button" NAME="one"   VALUE="  1 " OnCLick="Calc.Input.value += '1'">
+
+<INPUT class="ana" TYPE="button" NAME="two"   VALUE=" 2 " OnCLick="Calc.Input.value += '2'">
+
+<INPUT class="ana" TYPE="button" NAME="three"   VALUE=" 3" OnCLick="Calc.Input.value += '3'">
+
+<INPUT class="ana"  TYPE="button" NAME="plus"  VALUE="  - " OnClick="Calc.Input.value += ' - '">
+<br>
+		
+<INPUT class="ana" TYPE="button" id="slim" NAME="zero"   VALUE="  0  " OnCLick="Calc.Input.value += '0'">
+
+<INPUT class="ana"  TYPE="button" NAME="decimal"   VALUE=" . " OnCLick="Calc.Input.value += '.'">
+
+<INPUT class="ana" TYPE="button" NAME="plus"   VALUE="  +  " OnCLick="Calc.Input.value += '+'">
+
+<INPUT class="ana" id=middle TYPE="button" NAME="DoIt"  VALUE="  =  " OnClick="Calc.Input.value = eval(Calc.Input.value)">
+
+<br>
+<INPUT class="ana" id=reggie TYPE="button" NAME="avg"   VALUE="avg" OnCLick="Calc.Input.value = average(Calc.Input.value);">
+<!-- this is the reset button, add function!-->
+<INPUT class="ana" id=reggie TYPE="button" NAME="reset"   VALUE="reset" OnCLick= "Calc.Input.value = ' ' ">
+
+</FORM>
+<!-- closing div for container -->
+</div>
+
+</center>
+</body>
+</html>
